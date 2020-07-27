@@ -1,3 +1,22 @@
-body {
-    font-size: 100%;
+*, *:before, *after {
+    box-sizing: border-box;
+}
+
+h1 {
+    position: relative;
+    font-family: $font-title;
+    padding-left: 50px;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 40px;
+        height: 32px;
+        background-image: url('/img/logo.svg'); //adding the logo before the text in the header, which is Huddle
+        background-size: 200 px;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+    
 }
