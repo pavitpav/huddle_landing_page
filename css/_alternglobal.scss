@@ -1,0 +1,28 @@
+//this one was before the other guy said we could just add this line:
+//<h1><img src="/img/logo.svg" width="200" alt="Huddle"></h1>
+//to the header. It worked as well. It just looks easier like it is
+//now in the "header" section of html.
+*, *:before, *after {
+    box-sizing: border-box;
+}
+
+h1 {
+    position: relative;
+    font-family: $font-title;
+    font-size: 45px;
+    padding-left: 70px;
+    line-height: 1;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 70px;
+        height: 40px;
+        background-image: url('/img/logo.svg'); //adding the logo before the text in the header, which is Huddle
+        background-size: 200 px;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+    
+}
